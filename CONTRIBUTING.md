@@ -31,9 +31,10 @@ GitHub now offers an option to require that a branch is up-to-date before it is 
 
 ### Requirements
 
-* [rustup](https://rustup.rs)
-  * `rustup component add clippy rustfmt`
-* [cargo-watch](https://crates.io/crates/cargo-watch)
+* [mise](https://mise.jdx.dev)
+  * Rust, Node, cargo subcommands, and npm CLIs are pinned in
+    [`.mise/config.toml`](./.mise/config.toml); run `mise install` from the
+    project root to install them.
 
 ### Workflows
 
@@ -45,7 +46,7 @@ From the project root, this command will run the default development loop:
 $ cargo core-flow
 ```
 
-See [its definition](./.cargo/config) for details.
+See [its definition](./.cargo/config.toml) for details.
 
 #### moxie-dom
 
